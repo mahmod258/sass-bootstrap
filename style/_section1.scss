@@ -1,0 +1,39 @@
+section:first-of-type {
+  margin-left: 12%;
+  gap: 10%;
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    z-index: 2;
+    transform: translate(55px, 10px);
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.521);
+  }
+  @media (max-width: 839.33px) {
+    margin-left: 0px;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    img {
+      display: inline-block;
+      width: 350px;
+      margin-left: 10px;
+      margin-bottom: 40px;
+      transform: translate(0, 0);
+    }
+
+    h5 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

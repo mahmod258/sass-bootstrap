@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Cairo:wght@300;400;700&family=Great+Vibes&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Spline+Sans:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Cairo:wght@300;400;700&family=Great+Vibes&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;300;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Spline+Sans:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="big">
+      <nav class="py-5">
+        <div class="d-flex justify-content-between position-relative">
+          <div class="d-flex" style="gap: 80px">
+            <img src="images/logo.svg" alt="" />
+            <div class="d-none d-lg-flex dropdown-group">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle text-light shadow-none"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Something else here
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle text-light shadow-none"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Something else here
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle text-light shadow-none"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Something else here
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="px-5 d-inline d-lg-inline d-none">
+              <a href="#" class="text-white">Login</a>
+            </div>
+            <button class="white-click d-lg-inline d-none">Sign Up</button>
+            <button class="btn shadow-none d-inline d-lg-none" onclick="openClose()">
+              <img src="images/icon-hamburger.svg" alt="" id="hamburger" />
+            </button>
+          </div>
+          <div
+            class="position-absolute w-75 bg-white mobile-menu text-center d-lg-none flex-column align-items-center px-5 py-4 rounded"
+            style="box-shadow: 1px 1px 20px -10px"
+            id="mobile-menu"
+          >
+            <div
+              class="d-flex align-items-center flex-column"
+              style="gap: 13px"
+            >
+              <div>
+                <button
+                  class="btn dropdown-toggle dm shadow-none"
+                  onclick="openMenu(0)"
+                >
+                  dropdown
+                </button>
+                <div class="cm text-center">
+                  <ul class="p-0" style="gap: 10px">
+                    <li class="list-unstyled">overview</li>
+                    <li class="list-unstyled">Pricing</li>
+                    <li class="list-unstyled">Marketplace</li>
+                    <li class="list-unstyled">Features</li>
+                    <li class="list-unstyled">Integrations</li>
+                  </ul>
+                </div>
+              </div>
+              <di v>
+                <button
+                  class="btn dropdown-toggle dm shadow-none"
+                  onclick="openMenu(1)"
+                >
+                  dropdown
+                </button>
+                <div class="cm">
+                  <ul class="p-0" style="gap: 10px">
+                    <li class="list-unstyled">overview</li>
+                    <li class="list-unstyled">Pricing</li>
+                    <li class="list-unstyled">Marketplace</li>
+                    <li class="list-unstyled">Features</li>
+                    <li class="list-unstyled">Integrations</li>
+                  </ul>
+                </div>
+              </di>
+              <div>
+                <button
+                  class="btn dropdown-toggle dm shadow-none"
+                  onclick="openMenu(2)"
+                >
+                  dropdown
+                </button>
+                <div class="cm text-center">
+                  <ul class="p-0" style="gap: 10px">
+                    <li class="list-unstyled">overview</li>
+                    <li class="list-unstyled">Pricing</li>
+                    <li class="list-unstyled">Marketplace</li>
+                    <li class="list-unstyled">Features</li>
+                    <li class="list-unstyled">Integrations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="w-100 rounded-pill" />
+            <div class="d-flex align-items-center flex-column">
+              <button class="btn d-block shadow-none">Login</button>
+              <button class="btn mt-3 d-block Login shadow-none">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="text-center py-5">
+        <h1 class="h1 text-white title fw-bold">A modren publishing plateform</h1>
+        <p class="text-white p-title mt-4">
+          Grow your audience and build your online brand
+        </p>
+        <div class="mt-5 buttons">
+          <button class="white-click">Start For Free</button>
+          <button class="white-click2">Learn More</button>
+        </div>
+      </div>
+    </header>
+    </div>
+    <h2 class="text-center pb-0 pt-5 fw-bold">Designed for the future</h2>
+    <section class=" w-100 d-flex py-4">
+      <div class=" d-flex flex-column justify-content-center" style="gap: 70px">
+        <div>
+          <h5 class="fw-bold">Introducing an extensible editor</h5>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog. Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allow hello my name is mahmod
+          </p>
+        </div>
+        <div>
+          <h5 class="fw-bold">Introducing an extensible editor</h5>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+      </div>
+        <img src="images/illustration-editor-desktop.svg" alt=""/>
+    </section>
+    <section>
+    <div></div>
+     <div class="d-flex align-items-center justify-conetnt">
+        <img  src="images/illustration-phones.svg" alt="">
+      <div style="z-index: 1;">
+        <h2>State of the Art Infrastructure</h2>
+        <p>
+          With reliability and speed in mind, worldwide data centers  provide the backbone for ultra-fast connectivity. This ensures your  site will load instantly,  no matter where  your readers are, keeping your site competitive.
+        </p>
+      </div>
+     </div>
+    </section>
+    <section class="py-5 d-flex">
+      <img src="images/illustration-laptop-desktop.svg" alt="">
+      <img src="images/illustration-laptop-mobile.svg" alt="">
+      <div class=" d-flex flex-column justify-content-center" style="gap: 70px">
+        <div>
+          <h5 class="fw-bold">Free, open, simple</h5>
+          <p>
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+        </div>
+        <div>
+          <h5 class="fw-bold">Powerful tooling</h5>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="py-5">
+      <div class="container d-flex  text-white justify-content-between ">
+        <img src="images/logo.svg" alt="">
+        <ul class="list-unstyled d-flex flex-column" style="gap: 8px; color:hsl(240, 2%, 79%);">
+          <li class="h5 fw-bold text-white">Product</li>
+          <li style="font-size: 12px;">Overview</li>
+          <li style="font-size: 12px;">Pricing</li>
+          <li style="font-size: 12px;">Marketplace</li>
+          <li style="font-size: 12px;">Features</li>
+          <li style="font-size: 12px;">Integrations</li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column" style="gap: 8px; color:hsl(240, 2%, 79%);">
+          <li class="h5 fw-bold text-white">Product</li>
+          <li style="font-size: 12px;">Overview</li>
+          <li style="font-size: 12px;">Pricing</li>
+          <li style="font-size: 12px;">Marketplace</li>
+          
+        </ul>
+        <ul class="list-unstyled d-flex flex-column" style="gap: 8px; color: hsl(240, 2%, 79%)">
+          <li class="h5 fw-bold text-white">Product</li>
+          <li style="font-size: 12px;">Overview</li>
+          <li style="font-size: 12px;">Pricing</li>
+          <li style="font-size: 12px;">Marketplace</li>
+          
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

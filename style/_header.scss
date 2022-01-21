@@ -1,0 +1,130 @@
+.dropdown-group {
+  gap: 10px;
+}
+
+$main_color: hsl(355, 100%, 74%);
+$gray_color: #ece6e6;
+
+header {
+  background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+    url(../images/bg-pattern-intro-desktop.svg);
+  position: relative;
+  padding-bottom: 50px;
+  border-bottom-left-radius: 100px;
+  .big {
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    position: relative;
+    background-size: 1750px;
+    background-repeat: no-repeat;
+    background-position: 20% -600px;
+  }
+  nav {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  @media (max-width: 546px) {
+    nav {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: 326px) {
+    .buttons {
+      button:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .big-battren {
+    width: 1000px;
+    position: absolute;
+    right: -200px;
+    z-index: 1;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 45px;
+  }
+  .p-title {
+    font-family: "Overpass", sans-serif;
+    font-size: 18px;
+    color: rgb(236, 230, 230);
+  }
+  .white-click {
+    padding: 7px 25px;
+    font-weight: 600;
+    color: $main-color;
+    border: 0px;
+    border-radius: 50px;
+    &:hover {
+      background-color: transparent;
+      color: white;
+      outline: 1.5px solid white;
+    }
+  }
+  .white-click2 {
+    padding: 7px 25px;
+    font-weight: 600;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    margin-left: 10px;
+    &:hover {
+      color: $main_color;
+      background-color: white;
+    }
+  }
+  .mobile-menu {
+    top: 60px;
+    left: 12%;
+    display: none;
+    .cm {
+      display: none;
+    }
+  }
+  .mobile-menu {
+    border-radius: 15px;
+    button {
+      &::after {
+        color: $main_color;
+        margin-left: 10px;
+      }
+    }
+  }
+  .Login {
+    background-color: $main_color;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover {
+      color: $main_color;
+      background-color: white;
+      outline: 1.5px solid $main_color;
+    }
+  }
+  .cm {
+    background-color: $gray_color;
+    border-left: 15vw solid $gray_color;
+    border-right: 15vw solid $gray_color;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-top: 12.5px;
+    border-radius: 10px;
+    & > {
+      ul {
+        display: flex;
+        flex-flow: column;
+        li {
+          font-size: 16px;
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.692);
+        }
+      }
+    }
+  }
+}
